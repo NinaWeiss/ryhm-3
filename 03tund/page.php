@@ -25,6 +25,7 @@
 	$today = new DateTime("now");
 	$fromSemesterStart = $semesterStart->diff($today);
 	//var_dump($fromSemesterStart);
+	//echo "Päevi: " .$fromSemesterStart->days;
 	$semesterInfoHTML = "<p>Siin peaks olema info semestri kulgemise kohta!</p>";
 	$elapsedValue = $fromSemesterStart->format("%r%a");
 	$durationValue = $semesterDuration->format("%r%a");
